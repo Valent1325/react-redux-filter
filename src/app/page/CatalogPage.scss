@@ -1,0 +1,16 @@
+.catalog {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.catalog-filter {
+  width: 25%;
+  padding: 0 10px;
+}
+
+.catalog-content {
+  width: 75%;
+  padding: 0 10px;
+}

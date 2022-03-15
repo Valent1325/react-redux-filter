@@ -1,0 +1,58 @@
+.filter-title {
+  padding: 15px 0;
+  cursor: pointer;
+
+  span {
+    position: relative;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-bottom: 1px dashed #767676;
+    transition: all .3s;
+
+    &::after {
+      content: "";
+      border-top: 1px solid #767676;
+      border-right: 1px solid #767676;
+      transition: all .3s;
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      transform: rotate(
+          135deg
+      );
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+  }
+
+  &:hover {
+
+    span {
+      border-bottom: 1px dashed #f49f27;
+      color: #f49f27;
+
+      &::after {
+        border-top: 1px solid #f49f27;
+        border-right: 1px solid #f49f27;
+      }
+    }
+  }
+
+  &.opened {
+
+    span::after {
+      transform: rotate(
+          315deg
+      );
+      margin-top: 11px;
+    }
+  }
+}
+
+.collapse {
+  display: none
+}
+
+.collapse.in {
+  display: block
+}

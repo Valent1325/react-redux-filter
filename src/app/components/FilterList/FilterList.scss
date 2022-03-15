@@ -1,0 +1,19 @@
+.filter-list {
+  &__title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 21px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .icon {
+    margin-left: 6px;
+  }
+
+  &__item {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
